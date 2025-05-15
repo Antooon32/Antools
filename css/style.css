@@ -1,0 +1,33 @@
+:root {
+    /* -------------- */
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    /* -------------- */
+    --first-light-color: rgba(255, 255, 255, 0.9);
+    --second-light-color: #fdf5ff;
+    --third-light-color: #fff;
+    --fourth-light-color: #ffa537;
+    --fifth-light-color: #ff6e30;
+    --sixth-light-color: rgba(255, 255, 255, 0.8);
+    /* -------------- */
+    --first-shadow-color: rgba(255, 255, 255, 0.55);
+    --second-shadow-color: rgba(255, 255, 255, 0.78);
+    --third-shadow-color: rgba(255, 255, 255, 0.38);
+    --fourth-shadow-color: rgba(255, 165, 55, 0.55);
+    --fifth-shadow-color: rgba(255, 253, 253, 0.55);
+    --sixth-shadow-color: rgba(255, 253, 253, 0.78);
+    /* -------------- */
+    --first-background-color: #1e252b;
+    --second-background-color: rgba(40, 48, 54, 0.6);
+    --third-background-color: rgba(44, 53, 61, 0.2);
+    --fourth-background-color: rgba(40, 48, 54, 0.2);
+    --fifth-background-color: rgba(40, 48, 54, 0.4);
+    --sixth-background-color: rgba(255, 255, 255, 0.03);
+    --seventh-background-color: rgba(40, 48, 54, 0.3);
+    --eighth-background-color: #b345f1;
+    --ninth-background-color: #283036;
+    --tenth-background-color: #007acc;
+    --eleventh-background-color: rgba(255, 110, 48, 0.7);
+    /* -------------- */
+    --border-color: rgba(255, 255, 255, 0.15);
+}

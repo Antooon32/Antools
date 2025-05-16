@@ -30,6 +30,7 @@
     --eleventh-background-color: rgba(255, 110, 48, 0.7);
     /* -------------- */
     --border-color: rgba(255, 255, 255, 0.15);
+    --second-border-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -38,6 +39,12 @@ body {
     font-size: 16px;
     color: var(--first-shadow-color);
     background-color: var(--first-background-color);
+}
+
+.container {
+    width: 1224px;
+    margin: 0 auto;
+    outline: 1px solid red;
 }
 
 /* ------------------------------ */
@@ -70,13 +77,32 @@ body {
     line-height: 167%;
 }
 
+.hero-form {
+    display: flex;
+    border-radius: 15px;
+    width: 497px;
+    height: 64px;
+    padding-left: 18px;
+    padding-right: 11px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: var(--ninth-background-color);
+}
+
 .input {
+    flex-grow: 1;
+    height: 48px;
     font-weight: 400;
     font-size: 14px;
     color: var(--third-shadow-color);
+    background-color: var(--ninth-background-color);
 }
 
 .button {
+    border-radius: 8px;
+    width: 130px;
+    height: 48px;
+    background: var(--fifth-light-color);
     font-weight: 600;
     color: var(--third-light-color);
 }
@@ -116,8 +142,15 @@ body {
 }
 
 .popular-tools-button {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid var(--second-border-color);
+    border-radius: 8px;
+    width: 184px;
+    height: 64px;
     font-size: 20px;
     color: var(--fifth-light-color);
+    background-color: var(--first-background-color);
 }
 
 .trusted-title {
@@ -138,6 +171,10 @@ body {
 }
 
 .newcomer-button {
+    border-radius: 8px;
+    width: 198px;
+    height: 58px;
+    background-color: var(--fifth-light-color);
     font-size: 18px;
     color: var(--third-light-color);
 }
@@ -160,6 +197,18 @@ body {
     line-height: 214%;
     letter-spacing: 0.01em;
     color: var(--second-shadow-color);
+}
+
+.contributor-form {
+    display: flex;
+    border-radius: 15px;
+    width: 549px;
+    padding-left: 24px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 64px;
+    background-color: var(--ninth-background-color);
 }
 
 .footer-copyright {

@@ -34,3 +34,15 @@ img {
 address {
     font-style: normal;
 }
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.button {
+    border: none;
+}

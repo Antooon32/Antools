@@ -59,6 +59,15 @@ body {
     color: var(--first-shadow-color);
 }
 
+.nav-item:nth-child(2)::after {
+    display: inline-block;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url(../svg/header-arrow.svg);
+    background-repeat: no-repeat;
+}
+
 .auth-link {
     font-weight: 600;
     opacity: 0.78;
@@ -153,6 +162,14 @@ body {
     background-color: var(--first-background-color);
 }
 
+.trusted {
+    border-radius: 25px;
+    width: 1224px;
+    height: 253px;
+    backdrop-filter: blur(50px);
+    background: var(--third-background-color);
+}
+
 .trusted-title {
     font-size: 24px;
     color: var(--sixth-light-color);
@@ -177,6 +194,11 @@ body {
     background-color: var(--fifth-light-color);
     font-size: 18px;
     color: var(--third-light-color);
+}
+
+.slider-button {
+    border: none;
+    background-color: var(--first-background-color);
 }
 
 .our-team-name {

@@ -24,12 +24,14 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container flex-alignitems-baseline">
             <a class="logo" href="#">
                 <svg class="logo-svg" width="20" height="22">
                     <use href="./images/icons-sprite.svg#logo"></use>
                 </svg>
-                antools.
+                <span class="logo-span">
+                    antools.
+                </span>
             </a>
             <nav class="nav">
                 <ul class="nav-list">
@@ -47,15 +49,17 @@
     </header>
     <main class="main">
         <section class="hero">
-            <div class="container">
-                <h1 class="hero-title">Awesome tools for Designer & Developer.</h1>
-                <p class="hero-description">Antool is a web collection of information on paid or free Design and
-                    Development
-                    tools</p>
-                <form class="hero-form">
-                    <input class="input" type="text" placeholder="find more than 430+ tools...">
-                    <button class="button" type="submit">Search</button>
-                </form>
+            <div class="container overlay">
+                <div class="hero-content">
+                    <h1 class="hero-title">Awesome tools for Designer & Developer<span class="last-letter">.</span></h1>
+                    <p class="hero-description">Antool is a web collection of information on paid or free Design and
+                        Development
+                        tools</p>
+                    <form class="hero-form">
+                        <input class="input" type="text" placeholder="find more than 430+ tools...">
+                        <button class="button" type="submit">Search</button>
+                    </form>
+                </div>
                 <ul class="social-list">
                     <li class="social-item">
                         <a href="#">
@@ -83,9 +87,11 @@
         </section>
         <section class="popular-tools">
             <div class="container">
-                <h2 class="section-title">Most Popular Tools</h2>
-                <p class="section-description">Tools for the best Designers and Developers most popularly used in the
-                    world</p>
+                <div class="title-content">
+                    <h2 class="section-title">Most Popular Tools</h2>
+                    <p class="section-description">Tools for the best Designers and Developers most popularly used in the
+                        world</p>
+                </div>
                 <ul class="card-list">
                     <li class="card-item">
                         <svg width="65" height="64">

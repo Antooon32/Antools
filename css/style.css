@@ -49,6 +49,11 @@ body {
 
 /* ------------------------------ */
 
+.header {
+    margin-top: 26px;
+    margin-bottom: 58px;
+}
+
 .logo {
     font-weight: 600;
     font-size: 22px;
@@ -72,6 +77,10 @@ body {
     font-weight: 600;
     opacity: 0.78;
     color: var(--second-shadow-color);
+}
+
+.hero {
+    margin-bottom: 200px;
 }
 
 .hero-title {
@@ -114,6 +123,10 @@ body {
     background: var(--fifth-light-color);
     font-weight: 600;
     color: var(--third-light-color);
+}
+
+.popular-tools {
+    margin-bottom: 200px;
 }
 
 .section-title {
@@ -163,6 +176,9 @@ body {
 }
 
 .trusted {
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 25px;
     width: 1224px;
     height: 253px;
@@ -174,6 +190,10 @@ body {
     font-size: 24px;
     color: var(--sixth-light-color);
     text-align: center;
+}
+
+.newcomer {
+    margin-bottom: 200px;
 }
 
 .newcomer-title {
@@ -194,6 +214,10 @@ body {
     background-color: var(--fifth-light-color);
     font-size: 18px;
     color: var(--third-light-color);
+}
+
+.our-team {
+    margin-bottom: 250px;
 }
 
 .slider-button {
@@ -221,6 +245,10 @@ body {
     color: var(--second-shadow-color);
 }
 
+.contributor {
+    margin-bottom: 240px;
+}
+
 .contributor-form {
     display: flex;
     border-radius: 15px;
@@ -231,6 +259,11 @@ body {
     padding-bottom: 8px;
     height: 64px;
     background-color: var(--ninth-background-color);
+}
+
+.footer {
+    margin-bottom: 98px;
+    border-top: 0.50px solid var(--border-color);
 }
 
 .footer-copyright {

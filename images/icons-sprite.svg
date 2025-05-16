@@ -1,5 +1,5 @@
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
-    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;"
+    xmlns="http://www.w3.org/2000/svg">
     <defs>
         <symbol id="logo" viewBox="0 0 20 22" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9645 5.4359C10.632 5.4359 10.3089 5.47693 10 5.55416C10.1988 3.76058 10.9148 2.12398 11.9963 0.794922C16.2971 1.30464 19.6332 4.96455 19.6332 9.40293V15.7294C19.4605 15.7391 19.2864 15.744 19.1112 15.744C15.6706 15.744 12.6709 13.8483 11.1028 11.0423H14.9315V9.40293C14.9315 7.212 13.1554 5.4359 10.9645 5.4359Z" fill="white" />

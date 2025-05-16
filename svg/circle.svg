@@ -1,0 +1,25 @@
+<svg width="382" height="382" viewBox="0 0 382 382" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject x="-50" y="-50" width="482" height="482">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(25px);clip-path:url(#bgblur_0_62_2_clip_path);height:100%;width:100%"></div>
+  </foreignObject>
+  <g data-figma-bg-blur-radius="50">
+    <circle cx="191" cy="191" r="190" fill="#283036" fill-opacity="0.3" />
+    <circle cx="191" cy="191" r="190.5" stroke="white" stroke-opacity="0.03" />
+  </g>
+  <foreignObject x="-12.8261" y="-12.8261" width="407.652" height="407.652">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(25px);clip-path:url(#bgblur_1_62_2_clip_path);height:100%;width:100%"></div>
+  </foreignObject>
+  <g data-figma-bg-blur-radius="50">
+    <circle cx="191" cy="191" r="152.826" fill="#283036" fill-opacity="0.4" />
+    <circle cx="191" cy="191" r="153.326" stroke="white" stroke-opacity="0.03" />
+  </g>
+  <circle cx="191" cy="191" r="115.652" fill="#283036" />
+  <defs>
+    <clipPath id="bgblur_0_62_2_clip_path" transform="translate(50 50)">
+      <circle cx="191" cy="191" r="190" />
+    </clipPath>
+    <clipPath id="bgblur_1_62_2_clip_path" transform="translate(12.8261 12.8261)">
+      <circle cx="191" cy="191" r="152.826" />
+    </clipPath>
+  </defs>
+</svg>

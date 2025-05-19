@@ -64,6 +64,15 @@ body {
     margin-bottom: 58px;
 }
 
+.logo-svg {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.logo-span {
+    display: inline-block;
+}
+
 .logo {
     margin-right: 257px;
     font-weight: 600;
@@ -253,6 +262,15 @@ body {
     margin-right: 124px;
 }
 
+.card-actions-newcomer {
+    display: inline-block;
+    margin-right: 78px;
+}
+
+.action-icon {
+    display: inline-block;
+}
+
 .action-icon:not(:last-child) {
     margin-right: 19px;
 }
@@ -368,12 +386,66 @@ body {
     margin-bottom: 250px;
 }
 
+.slider-container {
+    position: relative;
+    display: flex;
+    height: 492px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
 .slider-button {
+    margin-right: 125px;
     border: none;
     background-color: var(--first-background-color);
 }
 
+.slider-button-right {
+    margin-left: 125px;
+    border: none;
+    background-color: var(--first-background-color);
+}
+
+.our-team-img {
+    margin-right: 57px;
+    background-image: url(../svg/circle.svg),
+        url(../svg/orange-circle.svg),
+        url(../svg/violet-circle.svg);
+    background-repeat: no-repeat;
+    background-position: center,
+        right bottom,
+        left 100px;
+    /* background-size: 380px; */
+}
+
+.our-team-list {
+    position: absolute;
+    left: 317px;
+    top: 372px;
+    height: 91px;
+    width: 265px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    backdrop-filter: blur(50px);
+    /* background-image: url(../svg/blue-circle.svg); */
+    /* background-image: radial-gradient(
+        circle at bottom left,
+        #007ACC 30px,
+        #007ACC 30px
+    ); */
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    backdrop-filter: blur(50px);
+    background-color: var(--fourth-background-color);
+}
+
 .our-team-name {
+    display: block;
+    width: 220px;
+    margin-bottom: 10px;
     font-size: 26px;
     letter-spacing: 0.01em;
     color: var(--sixth-shadow-color);
@@ -385,12 +457,19 @@ body {
 }
 
 .our-team-description {
+    margin-top: 128px;
+    margin-bottom: 184px;
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 214%;
     letter-spacing: 0.01em;
     color: var(--second-shadow-color);
+}
+
+.slider-nav {
+    display: block;
+    margin: 0 auto;
 }
 
 /* -------------------- */
@@ -416,12 +495,26 @@ body {
     background-color: var(--ninth-background-color);
 }
 
+/* ------------------------- */
+
 .footer {
     margin-bottom: 98px;
+    padding-top: 70px;
     border-top: 0.50px solid var(--border-color);
 }
 
+.footer-title-content {
+    display: inline-block;
+    width: 260px;
+    margin-right: 156px;
+}
+
+.footer-logo {
+    margin-bottom: 25px;
+}
+
 .footer-copyright {
+    margin-bottom: 21px;
     color: var(--first-light-color);
 }
 
@@ -430,9 +523,19 @@ body {
     line-height: 179%;
 }
 
+.address-list {
+    display: flex;
+    gap: 115px;
+}
+
 .item-title {
+    margin-bottom: 20px;
     font-size: 20px;
     color: var(--first-light-color);
+}
+
+.item-list-item:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 .item-link {

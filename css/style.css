@@ -114,15 +114,19 @@ body {
 /* ------------------------------ */
 
 .overlay {
+    width: 1380px;
+    margin: 0 auto;
     background-image: url(../images/hero-background.png);
     background-size: contain;
     background-position: right bottom;
     background-repeat: no-repeat;
+    outline: 1px solid blue;
 }
 
 .hero {
     margin-bottom: 200px;
     height: 568px;
+    outline: 1px solid white;
     /* background-image: url(../images/hero-background.png);
     background-position: right;
     background-repeat: no-repeat; */
@@ -130,6 +134,8 @@ body {
 
 .hero-content {
     width: 600px;
+    height: 418px;
+    margin-right: 140px;
     margin-bottom: 110px;
 }
 
@@ -138,6 +144,10 @@ body {
     font-size: 50px;
     line-height: 140%;
     color: var(--first-light-color);
+}
+
+.last-letter {
+    color: var(--fifth-light-color);
 }
 
 .hero-description {
@@ -258,13 +268,20 @@ body {
 }
 
 .card-actions {
-    display: inline-block;
-    margin-right: 124px;
+    display: flex;
+    align-items: center;
+    margin-right: 137px;
+}
+
+.action-content {
+    display: flex;
+    align-items: center;
 }
 
 .card-actions-newcomer {
-    display: inline-block;
-    margin-right: 78px;
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
 }
 
 .action-icon {
@@ -277,6 +294,12 @@ body {
 
 .card-link {
     display: inline-block;
+    width: 106px;
+    height: 42px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 600;
     color: var(--first-shadow-color);
 }
@@ -504,13 +527,18 @@ body {
 }
 
 .footer-title-content {
-    display: inline-block;
+    /* display: inline-block; */
     width: 260px;
     margin-right: 156px;
 }
 
 .footer-logo {
+    display: flex;
+    align-items: center;
     margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--first-light-color);
 }
 
 .footer-copyright {

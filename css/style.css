@@ -30,6 +30,8 @@
     --eleventh-background-color: rgba(255, 110, 48, 0.7);
     /* -------------- */
     --first-radial-color: rgba(255, 72, 66, 0.4);
+    --second-radial-color: #007acc4a;
+    --third-radial-color: rgba(255, 110, 48, 0.2);
     /* -------------- */
     --border-color: rgba(255, 255, 255, 0.15);
     --second-border-color: rgba(255, 255, 255, 0.1);
@@ -61,6 +63,8 @@ body {
 /* ------------------------------ */
 
 .header {
+    display: flex;
+    align-items: center;
     margin-top: 26px;
     height: 48px;
     margin-bottom: 58px;
@@ -76,6 +80,10 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    /* height: 33px;
+    width: 130px; */
     margin-right: 257px;
     font-weight: 600;
     font-size: 22px;
@@ -83,6 +91,9 @@ body {
 }
 
 .nav-list {
+    /* height: 24px; */
+    /* width: 431px; */
+    margin-top: 12px;
     display: flex;
     align-items: baseline;
     gap: 40px;
@@ -102,21 +113,46 @@ body {
     background-repeat: no-repeat;
 }
 
+/* .nav-svg-container {
+    display: flex;
+    align-items: center;
+} */
+
 .auth-list {
     display: flex;
+    align-items: center;
     gap: 41px;
 }
 
 .auth-link {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 118px;
+    height: 48px;    */
     font-weight: 600;
     opacity: 0.78;
     color: var(--second-shadow-color);
 }
 
+.auth-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 118px;
+    height: 48px;
+    font-weight: 600;
+    /* opacity: 0.78;  */
+    background-color: var(--fifth-light-color);
+    color: var(--third-light-color);
+}
+
 /* ------------------------------ */
 
 .overlay {
-    width: 1380px;
+    width: 1360px;
     margin: 0 auto;
     background-image: url(../images/hero-background.png);
     background-size: contain;
@@ -232,12 +268,14 @@ body {
 }
 
 .card-item {
+    transition: all 1s ease-in-out;
+    /* transition-delay: 0.2s; */
     /* flex-basis: calc((100% - 50) / 3); */
     width: 392px;
     height: 294px;
     border-radius: 15px;
     padding: 33px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .card-title-content {
@@ -248,7 +286,7 @@ body {
     flex-wrap: wrap;
     align-content: flex-start;
     column-gap: 30px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .card-title {
@@ -417,11 +455,12 @@ body {
 }
 
 .newcomer-item {
+    transition: all 1s ease-in-out;
     width: 288px;
     height: 284px;
     border-radius: 15px;
     padding: 28px 22px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 /* ---------------------- */
@@ -475,11 +514,11 @@ body {
     border-radius: 8px;
     backdrop-filter: blur(50px);
     /* background-image: url(../svg/blue-circle.svg); */
-    /* background-image: radial-gradient(
-        circle at bottom left,
-        #007ACC 30px,
-        #007ACC 30px
-    ); */
+    background-image: radial-gradient(
+        circle at bottom right,
+        var(--second-radial-color),
+        var(--fourth-background-color) 18%
+    );
     background-repeat: no-repeat;
     background-position: right bottom;
     backdrop-filter: blur(50px);
@@ -602,4 +641,60 @@ body {
 
 .item-link {
     color: var(--first-shadow-color);
+}
+
+/* ------------------------------- */
+
+.nav-link:hover,
+.item-link:hover {
+    color: var(--fifth-light-color);
+}
+
+/* .nav-svg-container:hover > .collections-svg {
+    fill: var(--fifth-light-color);
+}
+
+.collections-svg {
+    display: inline-block;
+} */
+
+/* .auth-link:hover {
+    background-color: var(--fifth-light-color);
+    color: var(--second-light-color);
+} */
+
+.card-item:hover {
+    backdrop-filter: blur(50px);
+    background-color: var(--second-background-color);
+    background-image: radial-gradient(
+        circle at top right,
+        var(--third-radial-color),
+        var(--second-background-color) 20%
+    );
+}
+
+.newcomer-item:hover {
+    backdrop-filter: blur(50px);
+    background-color: var(--second-background-color);
+    background-image: radial-gradient(
+        circle at top right,
+        var(--third-radial-color),
+        var(--second-background-color) 20%
+    );
+}
+
+.card-item:hover .card-link {
+    border-radius: 8px;
+    width: 106px;
+    height: 42px;
+    background: var(--fifth-light-color);
+    color: var(--third-light-color);
+}
+
+.newcomer-item:hover .card-link {
+    border-radius: 8px;
+    width: 106px;
+    height: 42px;
+    background: var(--fifth-light-color);
+    color: var(--third-light-color);
 }

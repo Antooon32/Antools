@@ -417,7 +417,7 @@ body {
     /* ------ */
     /* overflow: hidden; Обрізаємо вміст, що виходить за межі */
     /* white-space: nowrap; */
-    animation: scroll-brands 15s linear infinite;
+    animation: scroll-brands 20s linear infinite;
     /* ------- */
     display: flex;
     /* gap: 107px; */
@@ -740,3 +740,13 @@ body {
 .newcomer-item:hover .card-description {
     color: var(--second-shadow-color);
 }
+
+.social-item {
+    fill: white;
+}
+
+.social-item:hover {
+    fill: var(--fifth-light-color);
+    /* background-color: green; */
+}
+

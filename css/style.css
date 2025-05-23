@@ -48,7 +48,7 @@ body {
 .container {
     width: 1224px;
     margin: 0 auto;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .flex {
@@ -158,13 +158,13 @@ body {
     background-size: contain;
     background-position: right bottom;
     background-repeat: no-repeat;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 
 .hero {
     margin-bottom: 200px;
     height: 568px;
-    outline: 1px solid white;
+    /* outline: 1px solid white; */
     /* background-image: url(../images/hero-background.png);
     background-position: right;
     background-repeat: no-repeat; */
@@ -390,6 +390,7 @@ body {
 }
 
 .trusted-container {
+    overflow: hidden;
     width: 1059px;
 }
 
@@ -403,9 +404,24 @@ body {
     margin-bottom: 55px;
 }
 
+@keyframes scroll-brands {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .trusted-list {
+    /* ------ */
+    /* overflow: hidden; Обрізаємо вміст, що виходить за межі */
+    /* white-space: nowrap; */
+    animation: scroll-brands 15s linear infinite;
+    /* ------- */
     display: flex;
-    gap: 107px;
+    /* gap: 107px; */
+    gap: 80px;
 }
 
 /* --------------------------- */
@@ -664,6 +680,7 @@ body {
 } */
 
 .card-item:hover {
+    transform: translateY(-20px);
     backdrop-filter: blur(50px);
     background-color: var(--second-background-color);
     background-image: radial-gradient(
@@ -674,6 +691,7 @@ body {
 }
 
 .newcomer-item:hover {
+    transform: translateY(-20px);
     backdrop-filter: blur(50px);
     background-color: var(--second-background-color);
     background-image: radial-gradient(
@@ -691,10 +709,34 @@ body {
     color: var(--third-light-color);
 }
 
+.card-item:hover .card-title {
+    color: var(--first-light-color);
+}
+
+.card-item:hover .card-price {
+    color: var(--fourth-light-color);
+}
+
+.card-item:hover .card-description {
+    color: var(--second-shadow-color);
+}
+
 .newcomer-item:hover .card-link {
     border-radius: 8px;
     width: 106px;
     height: 42px;
     background: var(--fifth-light-color);
     color: var(--third-light-color);
+}
+
+.newcomer-item:hover .card-title {
+    color: var(--first-light-color);
+}
+
+.newcomer-item:hover .card-price {
+    color: var(--fourth-light-color);
+}
+
+.newcomer-item:hover .card-description {
+    color: var(--second-shadow-color);
 }

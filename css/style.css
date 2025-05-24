@@ -104,13 +104,36 @@ body {
     color: var(--first-shadow-color);
 }
 
-.nav-item:nth-child(2)::after {
+/* .nav-item:nth-child(2)::after {
     display: inline-block;
     content: '';
     width: 18px;
     height: 18px;
     background-image: url(../svg/header-arrow.svg);
     background-repeat: no-repeat;
+    fill: none;
+    stroke: white;
+    stroke-opacity: 0.55;
+}
+
+.nav-item:nth-child(2):hover::after {
+    content: '';
+    stroke: var(--fifth-light-color);
+} */
+
+.header-arrow {
+    fill: none;
+    stroke: white;
+    /* stroke-opacity: 0.55; */
+}
+
+.nav-link:nth-child(2):hover .header-arrow {
+    stroke: var(--fifth-light-color);
+}
+
+.flex-link {
+    display: flex;
+    align-items: center;
 }
 
 /* .nav-svg-container {
@@ -325,12 +348,34 @@ body {
 }
 
 .action-icon {
+    border-radius: 8px;
+    width: 42px;
+    height: 42px;
     display: inline-block;
 }
 
 .action-icon:not(:last-child) {
-    margin-right: 19px;
+    margin-right: 12px;
 }
+
+.heart {
+    fill: white;
+    fill-opacity: 0.38;
+}
+
+/* Не працює */
+
+/* .activ-icon:visited {
+    box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
+    background: var(--ninth-background-color);
+}
+
+.activ-icon:visited .heart {
+    fill: #FD3B41;
+    fill-opacity: 1.00;
+    box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
+    background: var(--ninth-background-color);
+} */
 
 .card-link {
     display: inline-block;
@@ -493,13 +538,13 @@ body {
     margin-bottom: 100px;
 }
 
-.slider-button {
+.left {
     margin-right: 125px;
     border: none;
     background-color: var(--first-background-color);
 }
 
-.slider-button-right {
+.right {
     margin-left: 125px;
     border: none;
     background-color: var(--first-background-color);
@@ -580,8 +625,25 @@ body {
 }
 
 .slider-nav {
-    display: block;
-    margin: 0 auto;
+    /* display: block; */
+    display: flex;
+    gap: 18px;
+    /* margin: 0 auto; */
+    justify-content: center;
+}
+
+.slider-item {
+    border-radius: 4px;
+    width: 44px;
+    height: 6px;
+}
+
+.no-activ {
+    background: var(--ninth-background-color);
+}
+
+.activ {
+    background: var(--fifth-light-color);
 }
 
 /* -------------------- */
@@ -750,3 +812,13 @@ body {
     /* background-color: green; */
 }
 
+.slider-button {
+    fill: none;
+    stroke: white;
+    stroke-opacity: 0.28;
+}
+
+.slider-button:hover {
+    stroke: var(--fifth-light-color);
+    stroke-opacity: 1;
+}

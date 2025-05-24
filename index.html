@@ -36,7 +36,12 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                    <li class="nav-item flex-link">
+                        <a class="nav-link" href="#">Categories</a>
+                        <svg class="header-arrow" width="18" height="18">
+                                <use href="./images/icons-sprite.svg#header-arrow"></use>
+                        </svg>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#">My Collections</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                 </ul>
@@ -108,9 +113,11 @@
                         <div class="action-content">
                         <ul class="card-actions">
                             <li class="action-icon">
-                                <svg width="28" height="28">
+                                <!-- <a class="activ-icon" href="google.com"> -->
+                                <svg class="heart" width="28" height="28">
                                     <use href="./images/icons-sprite.svg#heart"></use>
                                 </svg>
+                                <!-- </a> -->
                             </li>
                             <li class="action-icon">
                                 <svg width="30" height="30">
@@ -133,7 +140,7 @@
                         <div class="action-content">
                         <ul class="card-actions">
                             <li class="action-icon">
-                                <svg width="28" height="28">
+                                <svg class="heart" width="28" height="28">
                                     <use href="./images/icons-sprite.svg#heart"></use>
                                 </svg>
                             </li>
@@ -158,7 +165,7 @@
                         <div class="action-content">
                         <ul class="card-actions">
                             <li class="action-icon">
-                                <svg width="28" height="28">
+                                <svg class="heart" width="28" height="28">
                                     <use href="./images/icons-sprite.svg#heart"></use>
                                 </svg>
                             </li>
@@ -183,7 +190,7 @@
                         <div class="action-content">
                         <ul class="card-actions">
                             <li class="action-icon">
-                                <svg width="28" height="28">
+                                <svg class="heart" width="28" height="28">
                                     <use href="./images/icons-sprite.svg#heart"></use>
                                 </svg>
                             </li>
@@ -208,7 +215,7 @@
                         <div class="action-content">
                         <ul class="card-actions">
                             <li class="action-icon">
-                                <svg width="28" height="28">
+                                <svg class="heart" width="28" height="28">
                                     <use href="./images/icons-sprite.svg#heart"></use>
                                 </svg>
                             </li>
@@ -233,7 +240,7 @@
                         <div class="action-content">
                         <ul class="card-actions">
                             <li class="action-icon">
-                                <svg width="28" height="28">
+                                <svg class="heart" width="28" height="28">
                                     <use href="./images/icons-sprite.svg#heart"></use>
                                 </svg>
                             </li>
@@ -322,7 +329,7 @@
                             <div class="action-content">
                             <ul class="card-actions-newcomer">
                                 <li class="action-icon">
-                                    <svg width="28" height="28">
+                                    <svg class="heart" width="28" height="28">
                                         <use href="./images/icons-sprite.svg#heart"></use>
                                     </svg>
                                 </li>
@@ -347,7 +354,7 @@
                             <div class="action-content">
                             <ul class="card-actions-newcomer">
                                 <li class="action-icon">
-                                    <svg width="28" height="28">
+                                    <svg class="heart" width="28" height="28">
                                         <use href="./images/icons-sprite.svg#heart"></use>
                                     </svg>
                                 </li>
@@ -372,7 +379,7 @@
                             <div class="action-content">
                             <ul class="card-actions-newcomer">
                                 <li class="action-icon">
-                                    <svg width="28" height="28">
+                                    <svg class="heart" width="28" height="28">
                                         <use href="./images/icons-sprite.svg#heart"></use>
                                     </svg>
                                 </li>
@@ -397,7 +404,7 @@
                             <div class="action-content">
                             <ul class="card-actions-newcomer">
                                 <li class="action-icon">
-                                    <svg width="28" height="28">
+                                    <svg class="heart" width="28" height="28">
                                         <use href="./images/icons-sprite.svg#heart"></use>
                                     </svg>
                                 </li>
@@ -417,7 +424,7 @@
         <section class="our-team">
             <div class="container">
                 <div class="slider-container">
-                    <button class="slider-button">
+                    <button class="slider-button left">
                         <svg width="48" height="48">
                             <use href="./images/icons-sprite.svg#team-arrow"></use>
                         </svg>
@@ -438,15 +445,20 @@
                         Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo
                         sint non. Occaecat aute officia excepteur non laboris id qui ad.
                     </p>
-                    <button class="slider-button-right">
+                    <button class="slider-button right">
                         <svg width="48" height="48">
-                            <use href="./images/icons-sprite.svg#team-arrow-active"></use>
+                            <use href="./images/icons-sprite.svg#team-arrow-right"></use>
                         </svg>
                     </button>
                 </div>
-                <svg class="slider-nav" width="168" height="8">
+                <!-- <svg class="slider-nav" width="168" height="8">
                     <use href="./images/icons-sprite.svg#slider"></use>
-                </svg>
+                </svg> -->
+                <ul class="slider-nav">
+                    <li><div class="slider-item no-activ"></div></li>
+                    <li><div class="slider-item activ"></div></li>
+                    <li><div class="slider-item no-activ"></div></li>
+                </ul>
             </div>
         </section>
         <section class="contributor">
@@ -507,6 +519,10 @@
             </address>
         </div>
     </footer>
+
+    <!-- ---------------- -->
+    <!-- Не працює сердечко -->
+    <!-- <script src="./js/script.js"></script> -->
 </body>
 
 </html>

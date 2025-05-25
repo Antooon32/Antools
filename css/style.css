@@ -223,6 +223,8 @@ body {
 
 .hero-form {
     display: flex;
+    align-items: center;
+    gap: 13px;
     border-radius: 15px;
     width: 497px;
     height: 64px;

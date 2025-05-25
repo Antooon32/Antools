@@ -102,6 +102,7 @@ body {
 
 .nav-link {
     color: var(--first-shadow-color);
+    transition: color 0.3s ease;
 }
 
 /* .nav-item:nth-child(2)::after {
@@ -122,13 +123,15 @@ body {
 } */
 
 .header-arrow {
+    transition: fill 0.3s ease;
     fill: none;
     stroke: white;
-    /* stroke-opacity: 0.55; */
+    stroke-opacity: 0.55;
 }
 
-.nav-link:nth-child(2):hover .header-arrow {
+.nav-item:nth-child(2):hover .header-arrow {
     stroke: var(--fifth-light-color);
+    stroke-opacity: 1;
 }
 
 .flex-link {
@@ -718,6 +721,7 @@ body {
 }
 
 .item-link {
+    transition: color 0.3s ease;
     color: var(--first-shadow-color);
 }
 
@@ -804,11 +808,14 @@ body {
 }
 
 .social-item {
+    transition: fill 0.3s ease;
     fill: white;
+    fill-opacity: 0.78;
 }
 
 .social-item:hover {
     fill: var(--fifth-light-color);
+    fill-opacity: 1;
     /* background-color: green; */
 }
 

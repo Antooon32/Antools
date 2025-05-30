@@ -14,8 +14,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/reset.css">
 
@@ -26,9 +25,11 @@
     <header class="header">
         <div class="container flex-alignitems-baseline">
             <a class="logo" href="#">
+                <div class="background-svg">
                 <svg class="logo-svg" width="20" height="22">
                     <use href="./images/icons-sprite.svg#logo"></use>
                 </svg>
+                </div>
                 <span class="logo-span">
                     antools.
                 </span>
@@ -38,9 +39,9 @@
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item">
                         <a class="nav-link flex-link" href="#">Categories
-                        <svg class="header-arrow" width="18" height="18">
+                            <svg class="header-arrow" width="18" height="18">
                                 <use href="./images/icons-sprite.svg#header-arrow"></use>
-                        </svg>
+                            </svg>
                         </a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">My Collections</a></li>
@@ -48,52 +49,53 @@
                 </ul>
             </nav>
             <ul class="auth-list">
-                <li class="auth-item"><a class="auth-link" href="#">Login</a></li>
-                <li class="auth-item"><a class="auth-button" href="#">Sign Up</a></li>
+                <li class="auth-item"><button class="auth-button" href="#">Login</a></li>
+                <li class="auth-item"><button class="auth-button" href="#">Sign Up</a></li>
             </ul>
         </div>
     </header>
     <main class="main">
         <section class="hero">
             <div class="overlay">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Awesome tools for Designer & Developer<span class="last-letter">.</span></h1>
-                    <p class="hero-description">Antool is a web collection of information on paid or free Design and
-                        Development
-                        tools</p>
-                    <form class="hero-form">
-                        <svg width="25" height="24">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Awesome tools for Designer & Developer<span class="last-letter">.</span>
+                        </h1>
+                        <p class="hero-description">Antool is a web collection of information on paid or free Design and
+                            Development
+                            tools</p>
+                        <form class="hero-form">
+                            <svg width="25" height="24">
                                 <use href="./images/icons-sprite.svg#magnifier"></use>
-                        </svg>
-                        <input class="input" type="text" placeholder="find more than 430+ tools...">
-                        <button class="button" type="submit">Search</button>
-                    </form>
+                            </svg>
+                            <input class="input" type="text" placeholder="find more than 430+ tools...">
+                            <button class="button" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="#">
+                                <svg width="34" height="34">
+                                    <use href="./images/icons-sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#">
+                                <svg width="36" height="36">
+                                    <use href="./images/icons-sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#">
+                                <svg width="36" height="36">
+                                    <use href="./images/icons-sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a href="#">
-                            <svg width="34" height="34">
-                                <use href="./images/icons-sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#">
-                            <svg width="36" height="36">
-                                <use href="./images/icons-sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#">
-                            <svg width="36" height="36">
-                                <use href="./images/icons-sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
             </div>
         </section>
         <section class="popular-tools">
@@ -115,21 +117,21 @@
                         </div>
                         <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="action-content">
-                        <ul class="card-actions">
-                            <li class="action-icon">
-                                <!-- <a class="activ-icon" href="google.com"> -->
-                                <svg class="heart" width="28" height="28">
-                                    <use href="./images/icons-sprite.svg#heart"></use>
-                                </svg>
-                                <!-- </a> -->
-                            </li>
-                            <li class="action-icon">
-                                <svg width="30" height="30">
-                                    <use href="./images/icons-sprite.svg#folder"></use>
-                                </svg>
-                            </li>
-                        </ul>
-                        <a class="card-link" href="#">Visit</a>
+                            <ul class="card-actions">
+                                <li class="action-icon">
+                                    <!-- <a class="activ-icon" href="google.com"> -->
+                                    <svg class="heart" width="28" height="28">
+                                        <use href="./images/icons-sprite.svg#heart"></use>
+                                    </svg>
+                                    <!-- </a> -->
+                                </li>
+                                <li class="action-icon">
+                                    <svg width="30" height="30">
+                                        <use href="./images/icons-sprite.svg#folder"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="card-link" href="#">Visit</a>
                         </div>
                     </li>
                     <li class="card-item">
@@ -142,19 +144,19 @@
                         </div>
                         <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="action-content">
-                        <ul class="card-actions">
-                            <li class="action-icon">
-                                <svg class="heart" width="28" height="28">
-                                    <use href="./images/icons-sprite.svg#heart"></use>
-                                </svg>
-                            </li>
-                            <li class="action-icon">
-                                <svg width="30" height="30">
-                                    <use href="./images/icons-sprite.svg#folder"></use>
-                                </svg>
-                            </li>
-                        </ul>
-                        <a class="card-link" href="#">Visit</a>
+                            <ul class="card-actions">
+                                <li class="action-icon">
+                                    <svg class="heart" width="28" height="28">
+                                        <use href="./images/icons-sprite.svg#heart"></use>
+                                    </svg>
+                                </li>
+                                <li class="action-icon">
+                                    <svg width="30" height="30">
+                                        <use href="./images/icons-sprite.svg#folder"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="card-link" href="#">Visit</a>
                         </div>
                     </li>
                     <li class="card-item">
@@ -167,19 +169,19 @@
                         </div>
                         <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="action-content">
-                        <ul class="card-actions">
-                            <li class="action-icon">
-                                <svg class="heart" width="28" height="28">
-                                    <use href="./images/icons-sprite.svg#heart"></use>
-                                </svg>
-                            </li>
-                            <li class="action-icon">
-                                <svg width="30" height="30">
-                                    <use href="./images/icons-sprite.svg#folder"></use>
-                                </svg>
-                            </li>
-                        </ul>
-                        <a class="card-link" href="#">Visit</a>
+                            <ul class="card-actions">
+                                <li class="action-icon">
+                                    <svg class="heart" width="28" height="28">
+                                        <use href="./images/icons-sprite.svg#heart"></use>
+                                    </svg>
+                                </li>
+                                <li class="action-icon">
+                                    <svg width="30" height="30">
+                                        <use href="./images/icons-sprite.svg#folder"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="card-link" href="#">Visit</a>
                         </div>
                     </li>
                     <li class="card-item">
@@ -192,19 +194,19 @@
                         </div>
                         <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="action-content">
-                        <ul class="card-actions">
-                            <li class="action-icon">
-                                <svg class="heart" width="28" height="28">
-                                    <use href="./images/icons-sprite.svg#heart"></use>
-                                </svg>
-                            </li>
-                            <li class="action-icon">
-                                <svg width="30" height="30">
-                                    <use href="./images/icons-sprite.svg#folder"></use>
-                                </svg>
-                            </li>
-                        </ul>
-                        <a class="card-link" href="#">Visit</a>
+                            <ul class="card-actions">
+                                <li class="action-icon">
+                                    <svg class="heart" width="28" height="28">
+                                        <use href="./images/icons-sprite.svg#heart"></use>
+                                    </svg>
+                                </li>
+                                <li class="action-icon">
+                                    <svg width="30" height="30">
+                                        <use href="./images/icons-sprite.svg#folder"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="card-link" href="#">Visit</a>
                         </div>
                     </li>
                     <li class="card-item">
@@ -217,19 +219,19 @@
                         </div>
                         <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="action-content">
-                        <ul class="card-actions">
-                            <li class="action-icon">
-                                <svg class="heart" width="28" height="28">
-                                    <use href="./images/icons-sprite.svg#heart"></use>
-                                </svg>
-                            </li>
-                            <li class="action-icon">
-                                <svg width="30" height="30">
-                                    <use href="./images/icons-sprite.svg#folder"></use>
-                                </svg>
-                            </li>
-                        </ul>
-                        <a class="card-link" href="#">Visit</a>
+                            <ul class="card-actions">
+                                <li class="action-icon">
+                                    <svg class="heart" width="28" height="28">
+                                        <use href="./images/icons-sprite.svg#heart"></use>
+                                    </svg>
+                                </li>
+                                <li class="action-icon">
+                                    <svg width="30" height="30">
+                                        <use href="./images/icons-sprite.svg#folder"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="card-link" href="#">Visit</a>
                         </div>
                     </li>
                     <li class="card-item">
@@ -242,19 +244,19 @@
                         </div>
                         <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="action-content">
-                        <ul class="card-actions">
-                            <li class="action-icon">
-                                <svg class="heart" width="28" height="28">
-                                    <use href="./images/icons-sprite.svg#heart"></use>
-                                </svg>
-                            </li>
-                            <li class="action-icon">
-                                <svg width="30" height="30">
-                                    <use href="./images/icons-sprite.svg#folder"></use>
-                                </svg>
-                            </li>
-                        </ul>
-                        <a class="card-link" href="#">Visit</a>
+                            <ul class="card-actions">
+                                <li class="action-icon">
+                                    <svg class="heart" width="28" height="28">
+                                        <use href="./images/icons-sprite.svg#heart"></use>
+                                    </svg>
+                                </li>
+                                <li class="action-icon">
+                                    <svg width="30" height="30">
+                                        <use href="./images/icons-sprite.svg#folder"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="card-link" href="#">Visit</a>
                         </div>
                     </li>
                 </ul>
@@ -331,19 +333,19 @@
                             </div>
                             <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <div class="action-content">
-                            <ul class="card-actions-newcomer">
-                                <li class="action-icon">
-                                    <svg class="heart" width="28" height="28">
-                                        <use href="./images/icons-sprite.svg#heart"></use>
-                                    </svg>
-                                </li>
-                                <li class="action-icon">
-                                    <svg width="30" height="30">
-                                        <use href="./images/icons-sprite.svg#folder"></use>
-                                    </svg>
-                                </li>
-                            </ul>
-                            <a class="card-link" href="#">Visit</a>
+                                <ul class="card-actions-newcomer">
+                                    <li class="action-icon">
+                                        <svg class="heart" width="28" height="28">
+                                            <use href="./images/icons-sprite.svg#heart"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="action-icon">
+                                        <svg width="30" height="30">
+                                            <use href="./images/icons-sprite.svg#folder"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <a class="card-link" href="#">Visit</a>
                             </div>
                         </li>
                         <li class="newcomer-item">
@@ -356,19 +358,19 @@
                             </div>
                             <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <div class="action-content">
-                            <ul class="card-actions-newcomer">
-                                <li class="action-icon">
-                                    <svg class="heart" width="28" height="28">
-                                        <use href="./images/icons-sprite.svg#heart"></use>
-                                    </svg>
-                                </li>
-                                <li class="action-icon">
-                                    <svg width="30" height="30">
-                                        <use href="./images/icons-sprite.svg#folder"></use>
-                                    </svg>
-                                </li>
-                            </ul>
-                            <a class="card-link" href="#">Visit</a>
+                                <ul class="card-actions-newcomer">
+                                    <li class="action-icon">
+                                        <svg class="heart" width="28" height="28">
+                                            <use href="./images/icons-sprite.svg#heart"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="action-icon">
+                                        <svg width="30" height="30">
+                                            <use href="./images/icons-sprite.svg#folder"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <a class="card-link" href="#">Visit</a>
                             </div>
                         </li>
                         <li class="newcomer-item">
@@ -381,19 +383,19 @@
                             </div>
                             <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <div class="action-content">
-                            <ul class="card-actions-newcomer">
-                                <li class="action-icon">
-                                    <svg class="heart" width="28" height="28">
-                                        <use href="./images/icons-sprite.svg#heart"></use>
-                                    </svg>
-                                </li>
-                                <li class="action-icon">
-                                    <svg width="30" height="30">
-                                        <use href="./images/icons-sprite.svg#folder"></use>
-                                    </svg>
-                                </li>
-                            </ul>
-                            <a class="card-link" href="#">Visit</a>
+                                <ul class="card-actions-newcomer">
+                                    <li class="action-icon">
+                                        <svg class="heart" width="28" height="28">
+                                            <use href="./images/icons-sprite.svg#heart"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="action-icon">
+                                        <svg width="30" height="30">
+                                            <use href="./images/icons-sprite.svg#folder"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <a class="card-link" href="#">Visit</a>
                             </div>
                         </li>
                         <li class="newcomer-item">
@@ -406,19 +408,19 @@
                             </div>
                             <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <div class="action-content">
-                            <ul class="card-actions-newcomer">
-                                <li class="action-icon">
-                                    <svg class="heart" width="28" height="28">
-                                        <use href="./images/icons-sprite.svg#heart"></use>
-                                    </svg>
-                                </li>
-                                <li class="action-icon">
-                                    <svg width="30" height="30">
-                                        <use href="./images/icons-sprite.svg#folder"></use>
-                                    </svg>
-                                </li>
-                            </ul>
-                            <a class="card-link" href="#">Visit</a>
+                                <ul class="card-actions-newcomer">
+                                    <li class="action-icon">
+                                        <svg class="heart" width="28" height="28">
+                                            <use href="./images/icons-sprite.svg#heart"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="action-icon">
+                                        <svg width="30" height="30">
+                                            <use href="./images/icons-sprite.svg#folder"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <a class="card-link" href="#">Visit</a>
                             </div>
                         </li>
                     </ul>
@@ -427,7 +429,7 @@
         </section>
         <section class="our-team">
             <div class="container">
-                <div class="slider-container">
+                <!-- <div class="slider-container">
                     <button class="slider-button left">
                         <svg width="48" height="48">
                             <use href="./images/icons-sprite.svg#team-arrow"></use>
@@ -435,7 +437,9 @@
                     </button>
                     <img class="our-team-img" src="./images/ronald-richards.png" alt="Ronald Richards">
                     <ul class="our-team-list">
-                        <!-- <li><div class="overlay-slider-gradient"></div></li> -->
+
+                        <li><div class="overlay-slider-gradient"></div></li>
+
                         <li class="our-team-item">
                             <h3 class="our-team-name">Ronald Richards</h3>
                         </li>
@@ -455,14 +459,127 @@
                         </svg>
                     </button>
                 </div>
-                <!-- <svg class="slider-nav" width="168" height="8">
+                <svg class="slider-nav" width="168" height="8">
                     <use href="./images/icons-sprite.svg#slider"></use>
                 </svg> -->
-                <ul class="slider-nav">
+                <!-- <ul class="slider-nav">
                     <li><div class="slider-item no-activ"></div></li>
                     <li><div class="slider-item activ"></div></li>
                     <li><div class="slider-item no-activ"></div></li>
-                </ul>
+                </ul> -->
+
+
+
+                <div class="slider-box">
+                    <ul class="slider-team-list slider" data-slider>
+                        <li class="team-item" data-slider-item>
+                            <div class="team-img-box">
+                                <img class="team-img" src="./images/ronald-richards.png" alt="Ronald Richards-3">
+                                <div class="team-name-position-box-overflow">
+                                    <!--! Додаткова обгортка, для поширення градієнта на бордер -->
+                                    <div class="team-name-position-box">
+                                        <h3 class="team-name">Ronald Richards3</h3>
+                                        <p class="team-position">Product Manager-3</p>
+                                        <!-- todo var.2 - додатковий елемент фону з розмиттям -->
+                                        <div class="team-name-position-box-background-blur-effect"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-text-box">
+                                <!-- <div class="team-background-text">“</div> -->
+                                <p class="team-text">
+                                    <span><b><u>Ronald Richards-3</u></b></span> — це людина, яка повністю контролює
+                                    процес і
+                                    відповідає за створення нового продукту.<br>
+                                    На його плечах лежить величезна відповідальність, адже
+                                    саме від його захопленості ідеєю, кваліфікованості в
+                                    різних галузях та підходу до побудови роботи залежить,
+                                    чи досягне новий товар чи послуга успіху.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="team-item" data-slider-item>
+                            <div class="team-img-box">
+                                <img class="team-img" src="./images/ronald-richards.png" alt="Ronald Richards-2">
+                                <div class="team-name-position-box-overflow">
+                                    <!--! Додаткова обгортка, для поширення градієнта на бордер -->
+                                    <div class="team-name-position-box">
+                                        <h3 class="team-name">Ronald Richards2</h3>
+                                        <p class="team-position">Product Manager-2</p>
+                                        <!-- todo var.2 - додатковий елемент фону з розмиттям -->
+                                        <div class="team-name-position-box-background-blur-effect"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-text-box">
+                                <!-- <div class="team-background-text">“</div> -->
+                                <p class="team-text">
+                                    <span><b><u>Ronald Richards-2</u></b></span> — це людина, яка повністю контролює
+                                    процес і
+                                    відповідає за створення нового продукту.<br>
+                                    На його плечах лежить величезна відповідальність, адже
+                                    саме від його захопленості ідеєю, кваліфікованості в
+                                    різних галузях та підходу до побудови роботи залежить,
+                                    чи досягне новий товар чи послуга успіху.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="team-item" data-slider-item>
+                            <div class="team-img-box">
+                                <img class="team-img" src="./images/ronald-richards.png" alt="Ronald Richards-1">
+                                <div class="team-name-position-box-overflow">
+                                    <!--! Додаткова обгортка, для поширення градієнта на бордер -->
+                                    <div class="team-name-position-box">
+                                        <h3 class="team-name">Ronald Richards1</h3>
+                                        <p class="team-position">Product Manager-1</p>
+                                        <!-- todo var.2 - додатковий елемент фону з розмиттям -->
+                                        <div class="team-name-position-box-background-blur-effect"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-text-box">
+                                <!-- <div class="team-background-text">“</div> -->
+                                <p class="team-text">
+                                    <span><b><u>Ronald Richards-1</u></b></span> — це людина, яка повністю контролює
+                                    процес і
+                                    відповідає за створення нового продукту.<br>
+                                    На його плечах лежить величезна відповідальність, адже
+
+                                    саме від його захопленості ідеєю, кваліфікованості в
+                                    різних галузях та підходу до побудови роботи залежить,
+                                    чи досягне новий товар чи послуга успіху.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="slider-buttons-list">
+                        <li class="slider-buttons-item">
+                            <button class="slider-button-left" type="button" data-slider-prevBtn id="prevBtn">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30 36L18 24L30 12" stroke-width="5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="slider-buttons-item">
+                            <button class="slider-button-right" type="button" id="nextBtn" data-slider-nextBtn>
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 36L30 24L18 12" stroke-width="5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </li>
+
+                    </ul>
+                    <ul class="slider-pagination-list">
+                        <li class="slider-pagination-item" id="first" data-slider-pagination-first></li>
+                        <li class="slider-pagination-item" id="second" data-slider-pagination-second></li>
+                        <li class="slider-pagination-item" id="third" data-slider-pagination-third></li>
+                    </ul>
+                </div>
+
             </div>
         </section>
         <section class="contributor">
@@ -484,9 +601,11 @@
         <div class="container flex">
             <div class="footer-title-content">
                 <a class="footer-logo" href="#">
-                    <svg class="logo-svg" width="38" height="38">
-                        <use href="./images/icons-sprite.svg#footer-logo"></use>
+                    <div class="background-svg">
+                    <svg class="logo-svg" width="20" height="22">
+                        <use href="./images/icons-sprite.svg#logo"></use>
                     </svg>
+                    </div>
                     <span class="logo-span">antools.</span>
                 </a>
                 <p class="footer-copyright">Copyright 2021. Antools</p>
@@ -525,8 +644,7 @@
     </footer>
 
     <!-- ---------------- -->
-    <!-- Не працює сердечко -->
-    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

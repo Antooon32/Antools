@@ -2,6 +2,7 @@
     /* -------------- */
     --font-family: "Poppins", sans-serif;
     --second-family: "Roboto", sans-serif;
+    --third-family: "Lora", sans-serif;
     /* -------------- */
     --first-light-color: rgba(255, 255, 255, 0.9);
     --second-light-color: #fdf5ff;
@@ -70,20 +71,45 @@ body {
     margin-bottom: 58px;
 }
 
-.logo-svg {
-    display: inline-block;
-    margin-right: 12px;
+.background-svg {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* .background-svg:hover {
+    background-color: var(--fifth-light-color);
+} */
+
+.logo:hover .background-svg{
+    background-color: var(--fifth-light-color);
+}
+
+.logo:hover .logo-span {
+    color: var(--fifth-light-color);
+}
+
+/* .logo-svg {
+    display: inline-block; 
+    margin-right: 12px;
+} */
+
 .logo-span {
-    display: inline-block;
+    transition: all 0.3s ease;
+    /* display: inline-block; */
 }
 
 .logo {
     display: flex;
     align-items: center;
+    transition: all 0.3s ease;
     /* height: 33px;
     width: 130px; */
+    gap: 12px;
     margin-right: 257px;
     font-weight: 600;
     font-size: 22px;
@@ -97,7 +123,7 @@ body {
     display: flex;
     align-items: baseline;
     gap: 40px;
-    margin-right: 193px;
+    margin-right: 140px;
 }
 
 .nav-link {
@@ -147,7 +173,7 @@ body {
 .auth-list {
     display: flex;
     align-items: center;
-    gap: 41px;
+    gap: 20px;
 }
 
 .auth-link {
@@ -163,16 +189,24 @@ body {
 }
 
 .auth-button {
-    display: flex;
+    border: none;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    transition: all 0.3s ease;
     border-radius: 8px;
     width: 118px;
     height: 48px;
     font-weight: 600;
-    /* opacity: 0.78;  */
+    opacity: 0.78; 
+    color: var(--second-shadow-color);
+    background-color: var(--first-background-color);
+}
+
+.auth-button:hover {
     background-color: var(--fifth-light-color);
     color: var(--third-light-color);
+    opacity: 1;
 }
 
 /* ------------------------------ */
@@ -248,8 +282,19 @@ body {
     border-radius: 8px;
     width: 130px;
     height: 48px;
-    background: var(--fifth-light-color);
+    background-color: var(--ninth-background-color);
+    color: var(--first-shadow-color);
+    transition: all 0.3s ease;
+    /* border: 1px solid var(--second-border-color);
+    color: var(--fifth-light-color);
+    background-color: var(--first-background-color); */
+    /* background: var(--fifth-light-color); */
     font-weight: 600;
+    /* color: var(--third-light-color); */
+}
+
+.button:hover {
+    background: var(--fifth-light-color);
     color: var(--third-light-color);
 }
 
@@ -395,6 +440,7 @@ body {
 }
 
 .popular-tools-button {
+    transition: all 0.3s ease;
     display: block;
     margin: 0 auto;
     border: 1px solid var(--second-border-color);
@@ -404,6 +450,11 @@ body {
     font-size: 20px;
     color: var(--fifth-light-color);
     background-color: var(--first-background-color);
+}
+
+.popular-tools-button:hover {
+    background: var(--fifth-light-color);
+    color: var(--third-light-color);
 }
 
 /* ------------------------- */
@@ -434,7 +485,7 @@ body {
     /* background-image: radial-gradient(circle at top left,
         var(--first-radial-color),
         var(--third-background-color) 45%); */
-    background-image: url(../svg/overlay-orange-circle.svg);
+    background-image: url(../images/svg/overlay-orange-circle.svg);
     background-repeat: no-repeat;
     background-position: right top;
 }
@@ -506,8 +557,17 @@ body {
     border: none;
     width: 198px;
     height: 58px;
-    background-color: var(--fifth-light-color);
+    transition: all 0.3s ease;
+    color: var(--fifth-light-color);
+    background-color: var(--first-background-color);
+    border: 1px solid var(--second-border-color);
+    /* background-color: var(--fifth-light-color); */
     font-size: 18px;
+    /* color: var(--third-light-color); */
+}
+
+.newcomer-button:hover {
+    background-color: var(--fifth-light-color);
     color: var(--third-light-color);
 }
 
@@ -532,9 +592,10 @@ body {
 /* ---------------------- */
 
 .our-team {
+    height: 600px;
     margin-bottom: 250px;
 }
-
+/*
 .slider-container {
     position: relative;
     display: flex;
@@ -564,7 +625,9 @@ body {
     background-position: center,
         right bottom,
         left 100px;
-    /* background-size: 380px; */
+
+
+    background-size: 380px;
 }
 
 .our-team-list {
@@ -579,7 +642,9 @@ body {
     padding-bottom: 16px;
     border-radius: 8px;
     backdrop-filter: blur(50px);
-    /* background-image: url(../svg/blue-circle.svg); */
+
+    background-image: url(../svg/blue-circle.svg);
+
     background-image: radial-gradient(
         circle at bottom right,
         var(--second-radial-color),
@@ -589,7 +654,7 @@ body {
     background-position: right bottom;
     backdrop-filter: blur(50px);
     background-color: var(--fourth-background-color);
-}
+} */
 
 /* .overlay-slider-gradient {
     position: absolute;
@@ -604,7 +669,7 @@ body {
     background-position: right bottom;
 } */
 
-.our-team-name {
+/* .our-team-name {
     display: block;
     width: 220px;
     margin-bottom: 10px;
@@ -630,10 +695,10 @@ body {
 }
 
 .slider-nav {
-    /* display: block; */
+    display: block;
     display: flex;
     gap: 18px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     justify-content: center;
 }
 
@@ -649,7 +714,305 @@ body {
 
 .activ {
     background: var(--fifth-light-color);
+} */
+
+.slider-box {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /* outline: 1px solid burlywood; */
 }
+
+.slider-team-list  {
+    position: absolute;
+    /*! +++++ Пагінація +++++ */
+    right: 0;
+    /* right: -100%; */
+    /* right: -200%; */
+    /*! ______Пагінація______ */
+    width: 300%;
+    height: 492px;
+    margin-bottom: 100px;
+    display: flex;
+    /** анімація */
+    transition: 
+        transform 
+        500ms 
+        ease-in-out;
+    /* outline: 2px solid green; */
+}
+
+.team-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 187px;
+    display: flex;
+    /* flex: 0 0 auto;  */
+}
+/*todo +++++ var.1: Список Пагінації +++++ */
+.team-item-::after {
+    content: "";
+    width: 168px;
+    height: 8px;
+    margin-top: 592px;
+    margin-left: -51px;
+    /* background-image: url(../images/team-slider-pagination.svg); */
+}
+/* .team-item-:nth-child(3)::after {
+    background-image: url(../images/team-slider-pagination-1.svg);
+}
+.team-item-:nth-child(2)::after {
+    background-image: url(../images/team-slider-pagination-2.svg);
+}
+.team-item-:nth-child(1)::after {
+    background-image: url(../images/team-slider-pagination-3.svg);
+} */
+/*todo _____ var.1: Список Пагінації _____ */
+
+.team-img-box {
+    position: relative;
+    width: 401px;  /* ! crutch */
+    height: 100%;
+    padding-left: 10px; /* ! crutch */
+    /* background-image: url(../images/svg/circle.svg); */
+    /* background-repeat: no-repeat;
+    background-position: right 19px bottom 25px;
+    outline: 1px dotted yellow; */
+    background-image: url(../images/svg/circle.svg),
+        url(../images/svg/orange-circle.svg),
+        url(../images/svg/violet-circle.svg);
+    background-repeat: no-repeat;
+    background-position: center,
+        right bottom,
+        left 100px;
+}
+
+/*! Додаткова обгортка, для поширення градієнта на бордер */
+.team-name-position-box-overflow {
+    overflow: hidden;
+    position: absolute;
+    right: 3px;
+    bottom: 28px;
+    width: 267px;
+    height: 93px;
+    padding: 1px;
+    border-radius: 8px;
+    backdrop-filter: blur(50px);
+    /* todo var.1 - додатковий елемент фону з розмиттям - не поширює градієнт на бордер*/
+    background-image: radial-gradient(
+        circle at bottom right,
+        var(--second-radial-color),
+        var(--fourth-background-color) 18%
+    );
+    /* outline: 1px dotted yellowgreen; */
+}
+
+.team-name-position-box {
+    /* position: absolute;
+    right: 4px;
+    bottom: 29px;
+    width: 265px;
+    height: 91px;
+    backdrop-filter: blur(50px); */
+    width: 100%;
+    height: 100%;
+    padding: 10px 0 16px 23px;
+    border-radius: 8px;
+    /* outline: 1px solid var(--color-border-tools-brands); */
+    background-color: var(--color-background-team-name-position-box);
+    /* todo var.1 - додатковий елемент фону з розмиттям */
+    /* background-image:
+        radial-gradient(
+            circle at bottom right,
+            var(--color-gradient-team-name-position-box),
+            var(--color-background-team-name-position-box) 20%
+            ); */
+    /* outline: 1px dotted blue; */
+}
+
+/* todo var.2 - додатковий елемент фону з розмиттям */
+.team-name-position-box-background-blur-effect {
+    overflow: hidden;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 30px; 
+    height: 25px;
+    /* background-image: url(../images/team-name-position-box-background-image.png); */
+    background-image: url(../images/team-name-position-box-background-image.svg);
+    background-repeat: no-repeat;
+    background-size: 23px 23px;
+    background-position: right 7px bottom 2px;
+    filter: blur(20px); 
+    /* outline: 1px solid red; */
+}
+
+.team-name {
+    margin-bottom: 2px;
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: var(--color-font-second);
+}
+.team-item:nth-child(1) .team-name {
+    color: #09bd00;
+}
+.team-item:nth-child(2) .team-name {
+    color: #ffab44;
+}
+
+.team-position {
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    /* font-size: 16px; */
+    line-height: 1.5;
+    color: var(--color-font-third);
+}
+
+
+
+.team-text-box {
+    position: absolute;
+    right: 188px;
+    top: 18px;
+    width: 512px;
+    height: 336px;
+    padding: 110px 0 46px 119px;
+    /* outline: 1px dashed green; */
+}
+
+/* .team-background-text {
+    position: absolute;
+    left: 43px;
+    top: 23px;
+    width: 103px;
+    height: 320px;
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 250px;
+    background-image: 
+    linear-gradient(
+        235deg,
+        var(--color-background-main) 15%,
+        var(--color-background-team-background-text)
+        );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotate(19deg);
+    outline: 1px dashed orange;
+} */
+
+.team-text {
+    position: absolute;
+    width: 393px;
+    height: 180px;
+    font-family: var(--second-family);
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.01em;
+    color: var(--color-font-second);
+    /* outline: 1px dotted yellow; */
+}
+.team-item:nth-child(1) .team-text {
+    color: #c5ffc2;
+}
+.team-item:nth-child(2) .team-text {
+    color: #ffd097;
+}
+
+.slider-buttons-list {
+    position: absolute;
+    top: 246px;
+    /* left: 50%; */
+    transform: translate(0, -50%);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* outline: 1px dashed teal; */
+}
+
+.slider-buttons-item {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* outline: 1px dotted orangered; */
+}
+
+.slider-button-left,
+.slider-button-right {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: inherit;
+    /* outline: 1px dotted green; */
+}
+
+.slider-button-left:disabled,
+.slider-button-right:disabled {
+    cursor: not-allowed; 
+}
+
+/*todo var.1 -задаємо початковий стан (колір) кнопок < та > так: */
+/* .slider-button-left svg {
+    stroke: var(--color-font-slider-buttons);
+}
+.slider-button-right svg {
+    stroke: var(--color-font_active-or-background_hover);
+} */
+
+/*todo+ var.2 -задаємо початковий стан (колір) кнопок < та > через JS */
+
+/*todo +++++ var.2: Список Пагінації +++++ */
+.slider-pagination-list {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%);
+    width: 168px;
+    height: 8px;
+    margin: 0 auto;
+    /* margin-top: 592px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 1px dotted blue; */
+    /*todo _____ var.2: Список Пагінації _____ */
+}
+
+.slider-pagination-item {
+    width: 44px;
+    height: 6px;
+    border-radius: 4px;
+    background: var(--ninth-background-color);
+    transition:
+        color, height,
+        500ms
+        ease-in-out 
+        0ms;
+}
+
+/*todo Початковий стан Списку Пагінації */
+.slider-pagination-item:first-child {
+    height: 8px;
+    background: var(--fifth-light-color);
+}
+
+.slider-pagination-item:hover {
+    cursor: pointer;
+}
+
 
 /* -------------------- */
 
@@ -694,7 +1057,16 @@ body {
     margin-bottom: 25px;
     font-weight: 600;
     font-size: 22px;
+    gap: 12px;
     color: var(--first-light-color);
+}
+
+.footer-logo:hover .background-svg{
+    background-color: var(--fifth-light-color);
+}
+
+.footer-logo:hover .logo-span {
+    color: var(--fifth-light-color);
 }
 
 .footer-copyright {

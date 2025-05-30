@@ -14,8 +14,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/reset.css">
 
@@ -26,9 +25,11 @@
     <header class="header">
         <div class="container flex-alignitems-baseline">
             <a class="logo" href="#">
+                <div class="background-svg">
                 <svg class="logo-svg" width="20" height="22">
                     <use href="./images/icons-sprite.svg#logo"></use>
                 </svg>
+                </div>
                 <span class="logo-span">
                     antools.
                 </span>
@@ -48,8 +49,8 @@
                 </ul>
             </nav>
             <ul class="auth-list">
-                <li class="auth-item"><a class="auth-link" href="#">Login</a></li>
-                <li class="auth-item"><a class="auth-button" href="#">Sign Up</a></li>
+                <li class="auth-item"><button class="auth-button" href="#">Login</a></li>
+                <li class="auth-item"><button class="auth-button" href="#">Sign Up</a></li>
             </ul>
         </div>
     </header>
@@ -477,15 +478,15 @@
                                 <div class="team-name-position-box-overflow">
                                     <!--! Додаткова обгортка, для поширення градієнта на бордер -->
                                     <div class="team-name-position-box">
-                                        <h3 class="team-name">Ronald Richards1</h3>
-                                        <p class="team-position">Product Manager-1</p>
+                                        <h3 class="team-name">Ronald Richards3</h3>
+                                        <p class="team-position">Product Manager-3</p>
                                         <!-- todo var.2 - додатковий елемент фону з розмиттям -->
                                         <div class="team-name-position-box-background-blur-effect"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="team-text-box">
-                                <div class="team-background-text">“</div>
+                                <!-- <div class="team-background-text">“</div> -->
                                 <p class="team-text">
                                     <span><b><u>Ronald Richards-3</u></b></span> — це людина, яка повністю контролює
                                     процес і
@@ -503,15 +504,15 @@
                                 <div class="team-name-position-box-overflow">
                                     <!--! Додаткова обгортка, для поширення градієнта на бордер -->
                                     <div class="team-name-position-box">
-                                        <h3 class="team-name">Ronald Richards1</h3>
-                                        <p class="team-position">Product Manager-1</p>
+                                        <h3 class="team-name">Ronald Richards2</h3>
+                                        <p class="team-position">Product Manager-2</p>
                                         <!-- todo var.2 - додатковий елемент фону з розмиттям -->
                                         <div class="team-name-position-box-background-blur-effect"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="team-text-box">
-                                <div class="team-background-text">“</div>
+                                <!-- <div class="team-background-text">“</div> -->
                                 <p class="team-text">
                                     <span><b><u>Ronald Richards-2</u></b></span> — це людина, яка повністю контролює
                                     процес і
@@ -537,7 +538,7 @@
                                 </div>
                             </div>
                             <div class="team-text-box">
-                                <div class="team-background-text">“</div>
+                                <!-- <div class="team-background-text">“</div> -->
                                 <p class="team-text">
                                     <span><b><u>Ronald Richards-1</u></b></span> — це людина, яка повністю контролює
                                     процес і
@@ -600,9 +601,11 @@
         <div class="container flex">
             <div class="footer-title-content">
                 <a class="footer-logo" href="#">
-                    <svg class="logo-svg" width="38" height="38">
-                        <use href="./images/icons-sprite.svg#footer-logo"></use>
+                    <div class="background-svg">
+                    <svg class="logo-svg" width="20" height="22">
+                        <use href="./images/icons-sprite.svg#logo"></use>
                     </svg>
+                    </div>
                     <span class="logo-span">antools.</span>
                 </a>
                 <p class="footer-copyright">Copyright 2021. Antools</p>
@@ -641,7 +644,6 @@
     </footer>
 
     <!-- ---------------- -->
-    <!-- Не працює сердечко -->
     <script src="./js/script.js"></script>
 </body>
 
